@@ -57,8 +57,6 @@ for file in os.listdir('media/'):
 			media_out='media/'+'/compresses/'+file
 			subprocess.run(" ffmpeg -i " + media_in.replace(" ","\\")+ " -vcodec libx265 -crf 28 " + media_out.replace(" ","\\"),shell=True)
 			print('yeh10 mb se bdaa file hai ============',file_name)
-	else:
-		pass
 	elif extension==".png":
 
 		print('yeh file hai',file_lenght)
